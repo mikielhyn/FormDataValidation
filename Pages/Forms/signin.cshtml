@@ -1,0 +1,87 @@
+﻿@page
+@model FormDataValidation.Pages.Forms.signinModel
+@{
+    ViewData["Title"] = "Sign In";
+}
+<div class="row">
+<div class="container col-sm-6 signin">
+         <h4>Student Registration</h4>
+                <form method="post" class="form-horizontal">
+                    <div class="warning" asp-validation-summary="All"></div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Student ID:</label>
+                        <div class="col-sm-6">
+                            <input asp-for="Person.StdID" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">First Name:</label>
+                        <div class="col-sm-6">
+                            <input asp-for="Person.Fname" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Last Name:</label>
+                        <div class="col-sm-6">
+                            <input asp-for="Person.Lname" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Email Address:</label>
+                        <div class="col-sm-6">
+                            <input asp-for="Person.Email" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Campus:</label>
+                        <div class="col-sm-6">
+                            <input asp-for="Person.Campus" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Course:</label>
+                        <div class="col-sm-6">
+                            <input asp-for="Person.Course" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Year Level:</label>
+                        <div class="col-sm-6">
+                            <input asp-for="Person.Yrlvl" class="form-control">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-6">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+
+                </form>
+    </div>
+
+<div class="col-sm-6 lorem-ipsum">
+    <p>Lorem Ipsum is simply dummy text of the 
+    printing and typesetting industry. Lorem Ipsum
+    has been the industry's standard dummy text ever
+    since the 1500s, when an unknown printer took a galley 
+    of type and scrambled it to make a type specimen book. 
+    It has survived not only five centuries, but also the 
+    leap into electronic typesetting, remaining essentially 
+    unchanged. It was popularised in the 1960s with the release 
+    of Letraset sheets containing Lorem Ipsum passages, and more
+    recently with desktop publishing software like Aldus PageMaker
+    including versions of Lorem Ipsum.</p>
+</div>
+
+
+
+</div>
